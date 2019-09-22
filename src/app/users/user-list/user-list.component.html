@@ -1,0 +1,9 @@
+<!-- <app-loading-indicator></app-loading-indicator> -->
+<div *ngIf="users">
+  <button (click)="createUser()">Add user</button>
+  <span>User list works</span>
+  <ul>
+    <app-user-detail *ngFor="let user of users" [user]="user">
+    </app-user-detail>
+  </ul>
+</div>
