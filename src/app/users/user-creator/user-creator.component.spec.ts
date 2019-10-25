@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UserCreatorComponent } from './user-creator.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
 
 describe('UserCreatorComponent', () => {
   let component: UserCreatorComponent;
@@ -8,9 +10,9 @@ describe('UserCreatorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserCreatorComponent ]
-    })
-    .compileComponents();
+      declarations: [UserCreatorComponent],
+      imports: [ReactiveFormsModule, StoreModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +23,10 @@ describe('UserCreatorComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should display a form', () => {
+    const form = document.querySelector('form');
+    expect(form).toBeTruthy();
   });
 });

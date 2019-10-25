@@ -1,32 +1,32 @@
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
   <label>
     Name:
-    <input type="text" formControlName="name" appFittRainbow />
+    <input type="text" formControlName="name" />
   </label>
 
   <label>
     Weight:
-    <input type="text" formControlName="weight" appFittRainbow />
+    <input type="text" formControlName="weight" />
   </label>
   <label>
     Height:
-    <input type="text" formControlName="height" appFittRainbow />
+    <input type="text" formControlName="height" />
   </label>
   <label>
     Body fat:
-    <input type="text" formControlName="bodyFatPercentage" appFittRainbow />
+    <input type="text" formControlName="bodyFatPercentage" />
   </label>
   <label>
     Muscle rate:
-    <input type="text" formControlName="muscleRate" appFittRainbow />
+    <input type="text" formControlName="muscleRate" />
   </label>
   <label>
     Age:
-    <input type="text" formControlName="age" appFittRainbow />
+    <input type="text" formControlName="age" />
   </label>
   <label>
     Gender:
-    <input type="text" formControlName="gender" appFittRainbow />
+    <input type="text" formControlName="gender" />
   </label>
   <button type="submit" [disabled]="!profileForm.valid">Submit</button>
 </form>

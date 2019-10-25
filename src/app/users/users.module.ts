@@ -7,6 +7,7 @@ import { LoadingIndicatorModule } from '../shared/shared/components/loading-indi
 import { UserCreatorComponent } from './user-creator/user-creator.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared/shared.module';
+import { UserRoutingModule } from './user-routing.module';
 
 @NgModule({
   declarations: [UserDetailComponent, UserListComponent, UserCreatorComponent],
@@ -15,6 +16,7 @@ import { SharedModule } from '../shared/shared/shared.module';
     LoadingIndicatorModule,
     ReactiveFormsModule,
     SharedModule,
+    UserRoutingModule,
   ],
   exports: [UserDetailComponent, UserListComponent, UserCreatorComponent],
 })

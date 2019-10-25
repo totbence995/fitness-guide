@@ -3,7 +3,11 @@
   <button (click)="createUser()">Add user</button>
   <span>User list works</span>
   <ul>
-    <app-user-detail *ngFor="let user of users" [user]="user">
+    <app-user-detail
+      *ngFor="let user of users"
+      [user]="user"
+      (delete)="deleteUser($event)"
+    >
     </app-user-detail>
   </ul>
 </div>

@@ -1,0 +1,9 @@
+.user-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 1px solid #ccc;
+  & span {
+    margin: 5px;
+    padding: 5px;
+  }
+}

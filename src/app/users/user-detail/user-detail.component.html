@@ -1,5 +1,12 @@
-<div>
-    <span>{{user.name}}</span>
-    <span>Height:{{user.height}}</span>
-    <span>Gender: {{user.gender}}</span>
+<div class="user-detail">
+  <span>{{ user.name }}</span>
+  <span>Height: {{ user.height }}</span>
+  <span>Gender: {{ user.gender }}</span>
+  <span>bodyFatPercentage: {{ user.bodyFatPercentage }}</span>
+  <span>Musclerate: {{ user.muscleRate }}</span>
+  <span>Weight: {{ user.weight }}</span>
+  <div *ngIf="!edit">
+    <button type="button" (click)="toggleEdit()">Edit</button>
+    <button type="button" (click)="deleteUser()">Delete user</button>
+  </div>
 </div>

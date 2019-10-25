@@ -32,7 +32,6 @@ export class UserCreatorComponent implements OnInit {
     this.store.dispatch(
       createUser({
         user: {
-          id: (Math.random() * 1000).toString(),
           ...this.profileForm.value,
         },
       })
